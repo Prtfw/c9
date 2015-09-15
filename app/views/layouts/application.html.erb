@@ -22,15 +22,6 @@
       <% end %>
     </div>
     <div class="collapse navbar-collapse" id="main-nav-collapse">
-<<<<<<< HEAD
-      <div class ="nav navbar-nav navbar-right">
-        <% if current_user %>
-        <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: 'btn btn-primary navbar-btn'  %>
-        <% else %>
-        <%= link_to "Log In", new_user_session_path, class: 'btn btn-primary navbar-btn', method: :get  %>
-        <%= link_to "Sign up", new_user_registration_path, class: 'btn btn-success navbar-btn', method: :get  %>
-        <% end %> 
-=======
       <div class="nav navbar-nav navbar-right">
         <% if current_user %>
           <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: 'btn btn-primary navbar-btn' %>
@@ -38,7 +29,6 @@
           <%= link_to "Log In", new_user_session_path, class: 'btn btn-primary navbar-btn', method: :get %>
           <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-success navbar-btn', method: :get %>
         <% end %>
->>>>>>> bstripe
       </div>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "About", about_path %></li>
@@ -58,4 +48,7 @@
   
 </body>
 </html>
+
+
+
 
