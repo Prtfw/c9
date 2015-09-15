@@ -8,3 +8,4 @@ class CreatePlans < ActiveRecord::Migration
     end
   end
 end
+
