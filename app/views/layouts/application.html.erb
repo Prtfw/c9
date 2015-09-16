@@ -5,9 +5,8 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag "https://js.stripe.com/v2/", type: 'text/javascript' %>
   <%= javascript_include_tag 'application' %>
-  <%= tag :meta, :name => "stripe-key", :content => STRIPE_PUBLIC_KEY %>
+
   <%= csrf_meta_tags %>
-  
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
@@ -46,6 +45,11 @@
   <% end %>
   
   <%= yield %>
+</div>
+  
+</body>
+</html>
+
 </div>
   
 </body>
